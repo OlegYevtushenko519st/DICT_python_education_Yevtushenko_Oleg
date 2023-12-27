@@ -23,5 +23,22 @@ def main():
         print(f"{i} !")
     print("Completed, have a nice day!")
 
+    # Етап 5
+    test_question = "Why do we use methods?"
+    test_answers = ["To repeat a statement multiple times",
+                    "To decompose a program into several small subroutines",
+                    "To determine the execution time of a program",
+                    "To interrupt the execution of a program"]
+    correct_answer = random.choice(test_answers)
+    while True:
+        print(
+            f"{test_question}?\n1. {test_answers[0]}\n2. {test_answers[1]}\n3. {test_answers[2]}\n4. {test_answers[3]}")
+        answer = int(input("> "))
+        if answer == correct_answer:
+            print("Congratulations, have a nice day!")
+            break
+        else:
+            print("Please, try again.")
+
 if __name__ == "__main__":
     main()
